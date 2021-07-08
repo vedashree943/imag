@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            IMAGE RECOGNISER
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="////unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center>
+           <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3> 
+           <br>
+           <br>
+           <p style="font-size: 25px;">Model Is Trained To Identify The Following Objects :</p>
+           <b class="name_of_objects">WATCH<hr>
+        SPOON <hr> PHONE <hr> WATER BOTTLE<hr></b>
+        <label>webcam view:</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <div id="result"></div>
+<br>
+<br>
+<button class="btn btn-info" onclick="take_snapshot();">CAPTURE IMAGE</button>
+<br>
+<br>
+<button class="btn btn-success" onclick="check();">IDENTIFY IMAGE</button>
+<BR>
+    <BR>
+        <p style="font-size: 25px;">OBJECT: <span id="r_o_name"></span></p>
+        <p style="font-size: 25px;">ACCURACY: <span id="r_o_accuracy"></span></p>
+       
+       
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
